@@ -1,0 +1,19 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="{{ url_for('static', filename='register.css') }}">
+    <title>Register Voter</title>
+</head>
+<body>
+    <h1>Register Voter</h1>
+    <form action="/submit/voter" method="post">
+        <label for="person_id">Voter ID:</label>
+        <input type="text" id="person_id" name="person_id" required><br><br>
+        <label for="name">Name:</label>
+        <input type="text" id="name" name="name" required><br><br>
+        <button type="submit">Register and Capture Face</button>
+    </form>
+</body>
+</html>
